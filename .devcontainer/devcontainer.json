@@ -1,12 +1,12 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-  "name": "placeholder",
+  "name": "project_name",
   "build": {
     "dockerfile": "../.docker/Dockerfile",
     "context": "..",
     "args": {
-      "COMPOSE_PROJ_NAME": "placeholder",
+      "COMPOSE_PROJ_NAME": "project_name",
       "KIND": "3.11"
     }
   },

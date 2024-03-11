@@ -2,7 +2,7 @@
 ARG KIND=3.11
 FROM mkrausio/ml_research:torch-v2.1.1-${KIND}-cuda-11.8.0
 
-ARG COMPOSE_PROJ_NAME="code"
+ARG COMPOSE_PROJ_NAME="project_name"
 
 ENV PROJECT_NAME=${COMPOSE_PROJ_NAME}
 RUN echo ${COMPOSE_PROJ_NAME}/$PROJECT_NAME
@@ -18,8 +18,6 @@ WORKDIR /workspaces/$PROJECT_NAME
 COPY requirements.txt .
 COPY lightning_requirements.txt .
 
-RUN ln -s /workspaces/$PROJECT_NAME/aimw /usr/bin
-# RUN --mount=type=cache,target=/root/.cache/pip \
 RUN \
   python -m pip install --upgrade pip && \
   pip install "torch==2.1.1" -r requirements.txt  
