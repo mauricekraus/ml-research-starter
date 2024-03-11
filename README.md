@@ -1,6 +1,6 @@
-# ML-Research-Starter Template
+# project_name
 
-Barebones ml template for research projects.
+Barebone ml template for research projects.
 This template includes a basic directory structure:
 
 - Requirements 
@@ -8,4 +8,6 @@ This template includes a basic directory structure:
 - Compose Environment
 - Install Environment
 
-```
+
+## Run the project
+To run the project execute `python -m project_name` or after pip install . `project_name` also works
