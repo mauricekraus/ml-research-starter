@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1.2
 ARG KIND=3.11
-FROM mkrausio/ml_research:torch-v2.1.1-${KIND}-cuda-11.8.0
+FROM mkrausio/ml_research:torch-v2.3.0-${KIND}-cuda-11.8.0
 
 ARG COMPOSE_PROJ_NAME="project_name"
 
