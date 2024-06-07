@@ -20,7 +20,7 @@ COPY lightning_requirements.txt .
 
 RUN \
   python -m pip install --upgrade pip && \
-  pip install "torch==2.1.1" -r requirements.txt  
+  pip install "torch==2.3.0" -r requirements.txt  
 
 RUN \
   pip install -r lightning_requirements.txt || echo "pip resolved failed lightning_requirements.txt, but seems to be fine"
