@@ -3,7 +3,7 @@ services:
     build:
       args:
         - COMPOSE_PROJ_NAME=${COMPOSE_PROJ_NAME}
-        - KIND=3.11
+        - KIND=3.12
       context: ..
       dockerfile: ./.docker/Dockerfile
     environment:

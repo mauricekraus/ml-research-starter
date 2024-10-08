@@ -7,7 +7,7 @@
     "context": "..",
     "args": {
       "COMPOSE_PROJ_NAME": "project_name",
-      "KIND": "3.11"
+      "KIND": "3.12"
     }
   },
   "mounts": [
